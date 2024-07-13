@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>LLM 技术基础 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="导语在人工智能领域的不断发展中，语言模型扮演着重要的角色。特别是大型语言模型（LLM），如ChatGPT，已经成为科技领域的热门话题，并受到广泛认可。在这个背景下，LangChain作为一个以LLM模型为核心的开发框架出现，为自然语言处理开启了一个充满可能性的世界。借助LangChain，我们可以创建各种应用程序，包括聊天机器人和智能问答工具。 1. LangChain简介1.1. LangCha">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLM 技术基础">
+<meta property="og:url" content="http://localhost:4000/2024/07/04/My-New-Post/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="导语在人工智能领域的不断发展中，语言模型扮演着重要的角色。特别是大型语言模型（LLM），如ChatGPT，已经成为科技领域的热门话题，并受到广泛认可。在这个背景下，LangChain作为一个以LLM模型为核心的开发框架出现，为自然语言处理开启了一个充满可能性的世界。借助LangChain，我们可以创建各种应用程序，包括聊天机器人和智能问答工具。 1. LangChain简介1.1. LangCha">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-04T08:32:34.000Z">
+<meta property="article:modified_time" content="2024-07-05T07:28:31.272Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://localhost:4000"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-My-New-Post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/07/04/My-New-Post/" class="article-date">
+  <time class="dt-published" datetime="2024-07-04T08:32:34.000Z" itemprop="datePublished">2024-07-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      LLM 技术基础
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>在人工智能领域的不断发展中，语言模型扮演着重要的角色。特别是大型语言模型（LLM），如ChatGPT，已经成为科技领域的热门话题，并受到广泛认可。在这个背景下，LangChain作为一个以LLM模型为核心的开发框架出现，为自然语言处理开启了一个充满可能性的世界。借助LangChain，我们可以创建各种应用程序，包括聊天机器人和智能问答工具。</p>
+<h2 id="1-LangChain简介"><a href="#1-LangChain简介" class="headerlink" title="1. LangChain简介"></a>1. LangChain简介</h2><h2 id="1-1-LangChain发展史"><a href="#1-1-LangChain发展史" class="headerlink" title="1.1. LangChain发展史"></a>1.1. LangChain发展史</h2><p>LangChain 的作者是Harrison Chase，最初是于2022年10月开源的一个项目，在 GitHub 上获得大量关注之后迅速转变为一家初创公司。2017 年Harrison Chase 还在哈佛上大学，如今已是硅谷的一家热门初创公司的 CEO，这对他来说是一次重大而迅速的跃迁。Insider独家报道，人工智能初创公司 LangChain在种子轮一周后，再次获得红杉领投的2000万至2500万美元融资，估值达到2亿美元。 </p>
+<h2 id="1-2-LangChain为什么这么火"><a href="#1-2-LangChain为什么这么火" class="headerlink" title="1.2. LangChain为什么这么火"></a>1.2. LangChain为什么这么火</h2><p>LangChain目前是有两个语言版本（python和nodejs）,从下图可以看出来，短短半年的时间该项目的python版本已经获得了54k+的star。nodejs版本也在短短4个月收货了7k+的star，这无疑利好前端同学，不需要会python也能快速上手LLM应用开发。 笔者认为Langchain作为一个大语言模型应用开发框架，解决了现在开发人工智能应用的一些切实痛点。以GPT模型为例：</p>
+<ol>
+<li>数据滞后，现在训练的数据是到 2021 年9月。</li>
+<li>token数量限制，如果让它对一个300页的pdf进行总结，直接使用则无能为力。</li>
+<li>不能进行联网，获取不到最新的内容。</li>
+<li>不能与其他数据源链接。 另外作为一个胶水层框架，极大地提高了开发效率，它的作用可以类比于jquery在前端开发中的角色，使得开发者可以更专注于创新和优化产品功能。</li>
+</ol>
+<h2 id="1-3-LLM应用架构"><a href="#1-3-LLM应用架构" class="headerlink" title="1.3.LLM应用架构"></a>1.3.LLM应用架构</h2><p>LangChian作为一个大语言模型开发框架，是LLM应用架构的重要一环。那什么是LLM应用架构呢？其实就是指基于语言模型的应用程序设计和开发的架构。 LangChian可以将LLM模型、向量数据库、交互层Prompt、外部知识、外部工具整合到一起，进而可以自由构建LLM应用。</p>
+<h2 id="2-LangChain组件"><a href="#2-LangChain组件" class="headerlink" title="2. LangChain组件"></a>2. LangChain组件</h2><p>LangChain包含六部分组成，分别为：Models、Prompts、Indexes、Memory、Chains、Agents。</p>
+<h2 id="2-1-Models（模型）"><a href="#2-1-Models（模型）" class="headerlink" title="2.1. Models（模型）"></a>2.1. Models（模型）</h2><p>下面我们以具体示例分别阐述下Chat Modals, Embeddings, LLMs。</p>
+<h3 id="2-1-1-聊天模型"><a href="#2-1-1-聊天模型" class="headerlink" title="2.1.1. 聊天模型"></a>2.1.1. 聊天模型</h3><p>LangChain为使用聊天模型提供了一个标准接口。聊天模型是语言模型的一种变体。虽然聊天模型在内部使用语言模型，但它们所提供的接口略有不同。它们不是暴露一个 “输入文本，输出文本” 的API，而是提供了一个以 “聊天消息” 作为输入和输出的接口。 聊天模型的接口是基于消息而不是原始文本。LangChain 目前支持的消息类型有 AIMessage、HumanMessage、SystemMessage 和 ChatMessage，其中 ChatMessage 接受一个任意的角色参数。大多数情况下，您只需要处理 HumanMessage、AIMessage 和 SystemMessage。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2024/07/04/My-New-Post/" data-id="cly70duqi0000s00a5shp8z9z" data-title="LLM 技术基础" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/07/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/07/">July 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/07/04/My-New-Post/">LLM 技术基础</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
